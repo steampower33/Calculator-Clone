@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD2220DB2927711600411D69 /* CalculatorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2220DA2927711600411D69 /* CalculatorOperation.swift */; };
+		CD2220DD2927717A00411D69 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2220DC2927717A00411D69 /* Extension.swift */; };
 		CD688EE529235CF700167C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EE429235CF700167C4B /* AppDelegate.swift */; };
 		CD688EE729235CF700167C4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EE629235CF700167C4B /* SceneDelegate.swift */; };
 		CD688EE929235CF700167C4B /* CalcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EE829235CF700167C4B /* CalcController.swift */; };
@@ -14,9 +16,13 @@
 		CD688EF129235CFB00167C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD688EEF29235CFB00167C4B /* LaunchScreen.storyboard */; };
 		CD688EF92923643100167C4B /* CalcControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EF82923643100167C4B /* CalcControllerViewModel.swift */; };
 		CD688EFE292364C200167C4B /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EFD292364C200167C4B /* ButtonCell.swift */; };
+		CD688F002923657500167C4B /* CalcHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD688EFF2923657500167C4B /* CalcHeaderCell.swift */; };
+		CDA48A48292603F30064A486 /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA48A47292603F30064A486 /* CalculatorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD2220DA2927711600411D69 /* CalculatorOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorOperation.swift; sourceTree = "<group>"; };
+		CD2220DC2927717A00411D69 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CD688EE129235CF700167C4B /* Calculator-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD688EE429235CF700167C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD688EE629235CF700167C4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		CD688EF229235CFB00167C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD688EF82923643100167C4B /* CalcControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcControllerViewModel.swift; sourceTree = "<group>"; };
 		CD688EFD292364C200167C4B /* ButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
+		CD688EFF2923657500167C4B /* CalcHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcHeaderCell.swift; sourceTree = "<group>"; };
+		CDA48A47292603F30064A486 /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				CD688EE829235CF700167C4B /* CalcController.swift */,
-				CD688EE629235CF700167C4B /* SceneDelegate.swift */,
-				CD688EE429235CF700167C4B /* AppDelegate.swift */,
-				CD688EFC2923644C00167C4B /* Supporting */,
-				CD688EFB2923643F00167C4B /* Models */,
-				CD688EFA2923643B00167C4B /* Views */,
-				CD688EED29235CFB00167C4B /* Assets.xcassets */,
-				CD688EEF29235CFB00167C4B /* LaunchScreen.storyboard */,
-				CD688EF229235CFB00167C4B /* Info.plist */,
 				CD688EF82923643100167C4B /* CalcControllerViewModel.swift */,
+				CD688EFA2923643B00167C4B /* Views */,
+				CD688EFB2923643F00167C4B /* Models */,
+				CD688EFC2923644C00167C4B /* Supporting */,
+				CD688EF229235CFB00167C4B /* Info.plist */,
 			);
 			path = "Calculator-Clone";
 			sourceTree = "<group>";
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CD688EFD292364C200167C4B /* ButtonCell.swift */,
+				CD688EFF2923657500167C4B /* CalcHeaderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -83,6 +88,8 @@
 		CD688EFB2923643F00167C4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CDA48A47292603F30064A486 /* CalculatorButton.swift */,
+				CD2220DA2927711600411D69 /* CalculatorOperation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +97,11 @@
 		CD688EFC2923644C00167C4B /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				CD688EED29235CFB00167C4B /* Assets.xcassets */,
+				CD688EEF29235CFB00167C4B /* LaunchScreen.storyboard */,
+				CD688EE629235CF700167C4B /* SceneDelegate.swift */,
+				CD688EE429235CF700167C4B /* AppDelegate.swift */,
+				CD2220DC2927717A00411D69 /* Extension.swift */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -164,11 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2220DD2927717A00411D69 /* Extension.swift in Sources */,
 				CD688EE929235CF700167C4B /* CalcController.swift in Sources */,
+				CDA48A48292603F30064A486 /* CalculatorButton.swift in Sources */,
 				CD688EE529235CF700167C4B /* AppDelegate.swift in Sources */,
 				CD688EE729235CF700167C4B /* SceneDelegate.swift in Sources */,
+				CD688F002923657500167C4B /* CalcHeaderCell.swift in Sources */,
 				CD688EFE292364C200167C4B /* ButtonCell.swift in Sources */,
 				CD688EF92923643100167C4B /* CalcControllerViewModel.swift in Sources */,
+				CD2220DB2927711600411D69 /* CalculatorOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
